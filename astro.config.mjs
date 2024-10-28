@@ -8,7 +8,7 @@ import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  output: 'hybrid',
+  output: 'server',
   server: {port: 3000, host: true},
   adapter: netlify({
     edgeMiddleware: true
